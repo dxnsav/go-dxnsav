@@ -1,0 +1,17 @@
+.Container {
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+
+	border: 2px solid #e2e2e2;
+	border-radius: 20px;
+	width: 100%;
+	max-width: 500px;
+}
+
+.c-row {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}

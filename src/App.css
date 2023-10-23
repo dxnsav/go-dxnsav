@@ -1,0 +1,35 @@
+.mp-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.qr-text {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.qr-card svg {
+  width: 20px;
+  height: 20px;
+  color: #1463fe;
+}
+
+.c-row h2 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.c-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+

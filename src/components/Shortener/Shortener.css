@@ -1,0 +1,44 @@
+input.input {
+	width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+
+  font-size: 15px;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.9);
+}
+
+input.input:hover {
+	box-shadow: 0 0 0 1px black;
+}
+
+input.input:focus {
+	box-shadow: 0 0 0 2px black;
+}
+
+input.input:selection {
+	background-color: rgba(0, 0, 0, 0.9);
+	color: #fff;
+}
+
+input.input {
+	padding: 0 10px;
+	height: 35px;
+	line-height: 1;
+}
+
+.box-link {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+.shortener {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	padding: 20px;
+}

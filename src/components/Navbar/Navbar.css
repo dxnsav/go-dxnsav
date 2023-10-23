@@ -1,0 +1,16 @@
+nav.navbar {
+	width: 100%;
+	z-index: 100;
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 20px;
+	box-sizing: border-box;
+	margin-bottom: 20px;
+}
+
+h1.nav-header {
+	font-size: 32px;
+	font-weight: 600;
+	line-height: 1;
+	text-transform: uppercase;
+}

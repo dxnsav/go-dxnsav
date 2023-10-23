@@ -1,0 +1,28 @@
+button.Button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  padding: 0 15px;
+  font-size: 15px;
+  line-height: 1;
+  font-weight: 500;
+  height: 35px;
+  padding: 10px 30px;
+
+  background-color: #1463fe;
+  color: #fff;
+}
+
+button.Button.outlined {
+	background-color: transparent;
+	border: 1px solid #1463fe;
+	color: #1463fe;
+}
+
+button.Button:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+button.Button:focus {
+  box-shadow: 0 0 0 2px black;
+}
