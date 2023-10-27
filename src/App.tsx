@@ -8,10 +8,10 @@ import ShortLinkContext from './context/ShortLinkContext';
 import { useState } from 'react';
 import QRCode from 'qrcode.react';
 
-function App() {
+const App: React.FC = () => {
   const date = new Date();
   const currentDate = `${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()}`;
-  const [shortLink, setShortLink] = useState('');
+  const [shortLink, setShortLink] = useState<string>('');
 
   return (
     <ShortLinkContext.Provider value={{ shortLink, setShortLink }}>
@@ -24,7 +24,7 @@ function App() {
             <Button text="Download PNG" />
           </div>
           <div className="c-row">
-          {shortLink ? <QRCode value={shortLink} /> : <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://www.google.com" alt="QR code" />}
+            {shortLink ? <QRCode value={shortLink} /> : <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://www.google.com" alt="QR code" />}
 
             <div className='c-col qr-card'>
               <div className="c-row">

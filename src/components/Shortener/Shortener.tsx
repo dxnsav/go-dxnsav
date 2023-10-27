@@ -4,8 +4,8 @@ import axios from 'axios';
 import './Shortener.css';
 import ShortLinkContext from '../../context/ShortLinkContext';
 
-const Shortener = () => {
-	const [link, setLink] = useState('');
+const Shortener: React.FC = () => {
+	const [link, setLink] = useState<string>('');
   const {shortLink, setShortLink} = useContext(ShortLinkContext);
 
   const shortenLink = async () => {
